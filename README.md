@@ -4,4 +4,4 @@ This repository contains the codes and logs for my **"Bachelor Eind Project" (BE
 
 ### Software
 
-The programming language used for this project is Python and everything is executed on a juypter notebook. 
+The programming language used for this project is Python and the codes are executed on a juypter notebook. 
