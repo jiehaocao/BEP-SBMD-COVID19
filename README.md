@@ -5,3 +5,7 @@ This repository contains the codes and logs for my **"Bachelor Eind Project" (BE
 ### Software
 
 The programming language used for this project is Python and the codes are executed on a juypter notebook. 
+
+### SIR and SEIR model 
+
+
