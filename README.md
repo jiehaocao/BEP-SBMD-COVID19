@@ -25,7 +25,7 @@ The programming language used for this project is Python and the codes are execu
 The data that were used for this research are included in the folder _"data"_ and are obtained from the website of **RIVM (National Institute for Public Health and the Environment)**.
 
 
-## SIR and SEIR model 
+## 1. SIR and SEIR model 
 
 Both **SIR** and **SEIR** are compartemental models, which consist of differential equations, which simulates the input/output at each compartment. Which the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
 <br><br>
@@ -69,7 +69,7 @@ _**Note: This curve is not the actual curve that simulates the spread of COVID-1
 
 This model can be interesting when simulating the spread of COVID-19 in a given country, because with the correctly estimated parameters, it is possible to get an estimation of the amount of people who are **Infected** or **Exposed** to COVID-19. Therefore, even with a lack of testing, it is possible to get an idea of how many people are exposed or infected. Furthermore, which such models, it is possible to see whether if the taken measurements will "flatten the curve".
 
-## Logistic Growth (3 parameters - Verhulst)
+## 2. Logistic Growth (3 parameters - Verhulst)
 
 The **Logistic Growth curve** can be used to estimate the inflection point and/or predict the maximum number of cases of COVID-19. This can also be applied on the **Hospital admissions** and **ICU admissions**. 
 
@@ -116,7 +116,7 @@ The logistic growth curve and its statistics for the ICU admissions in the Nethe
 **Note: The actual data passes the predicted maximum, but these models are still valid, meaning that there exist a chance that the actual admissions can pass the predicted maximum. Therefore, it is important use these models to achieve insights when taking preventive measurements.**
 
 
-## Exponential growth (3 parameters)
+### Exponential growth (3 parameters)
 
 Although exponential growth function are quite abstract and difficult to tell when the peak is reached, by plotting the **log-scale**, a straight line is obtained. This represents the trajectory of confirmed COVID-19 cases. By plotting the actual data (in the Netherlands), it can be seen whether the actual data deviates from the trajectory. 
 
