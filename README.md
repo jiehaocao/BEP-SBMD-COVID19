@@ -100,14 +100,14 @@ However, this model highly depends on the available data. Model can be tweaked b
 
 This is important, because it can be predicted what the **maximum intake** is and when is "peak" is achieved. With this information, it is possible to take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU are not overloaded).
 
-### Hospital Admissions 
+### ~~Hospital Admissions~~ (DEPRECATED) 
 
 The logistic growth curve and its statistics for hospital admissions in the Netherlands: 
 
 ![](/images/log_growth_hosp.PNG)
 
 
-### ICU Admissions 
+### ~~ICU Admissions~~ (DEPRECATED) 
 
 The logistic growth curve and its statistics for the ICU admissions in the Netherlands: 
 
