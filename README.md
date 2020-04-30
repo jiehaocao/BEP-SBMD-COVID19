@@ -23,7 +23,7 @@ The programming language used for this project is Python and the codes are execu
 
 ## Data
 The data that were used for this research are included in the folder _"data"_ and are obtained from the website of **RIVM (National Institute for Public Health and the Environment)**.
-The data redarding the ICU  admission is obtained form **Stichting Nice (National Intensive Care Evaluatie): https://www.stichting-nice.nl/**
+The data redarding the ICU  admission is obtained from **Stichting Nice (National Intensive Care Evaluatie): https://www.stichting-nice.nl/**
 
 ## 1. SIR and SEIR model 
 
