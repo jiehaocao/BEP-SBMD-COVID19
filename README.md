@@ -129,4 +129,8 @@ The trajectory and its statistics, regarding the confirmed COVID-19 cases in the
 
 ![](/images/exp_trajectory_040520.PNG)
 
-## 3. Kalman Filter (Under development)
+## 3. Kalman Filter (UNDER DEVELOPMENT)
+
+The **Kalman filter** is a mathematical model that can be used as a predictor or filter. This means that this Kalman Filter can also be applied on the SEIR models or the Logistic Growth Curve, as a filter. But in this section, Kalman Filter is used as a predictor, to forecast the spread of COVID-19 in the Netherlands. Since, the Kalman Filter is ideal for systems that are continuously changing, the spread of COVID-9, which is time-dependent can also be seen as a continously changing system. 
+<br><br>
+The advantage is that Kalman Filter uses the observed measurements, which are measured over time (*confirmed daily cases*). These measurements can contain noise and inaccuracies (*for example in this case: lack of testing, social distancing etc.*), which the Kalman Filter will take into account and therefore produce values that are closer to the actual data (*the prediction would be closer to the actual confirmed cases of that day*).
