@@ -128,3 +128,5 @@ A downward deviation, would mean that things are getting better, but a upward de
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
 ![](/images/exp_trajectory_040520.PNG)
+
+## 3. Kalman Filter (Under development)
