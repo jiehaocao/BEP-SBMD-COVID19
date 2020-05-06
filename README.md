@@ -27,14 +27,14 @@ The data redarding the ICU  admission is obtained from **Stichting Nice (Nationa
 
 ## 1. SIR and SEIR model 
 
-Both **SIR** and **SEIR** are compartemental models, which consist of differential equations, which simulates the input/output at each compartment. Which the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
+Both **SIR** and **SEIR** are compartmental models, which consist of differential equations, which simulates the input/output at each compartment. Which the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
 <br><br>
 The main advantage is that these models are is independent from the actual data, thus even without proper or insufficient testing, _**the amount of people who are infected or exposed to this infectious disease, can be estimated**_. This is important, because with this information, the government, healthcare companies or hospitals can take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU are not overloaded).
 
 After all, the true number of infected person can only be verified with large testing of the population. 
 ### SIR model 
 
-The **SIR (Susceptible-Infected-Recovered)** model is one of the most basic compartemental model for epidemiology. This is a dynamic simulation model and can be used to simulate the course/spread (over a time range) of an infectious disease, such as COVID-19. 
+The **SIR (Susceptible-Infected-Recovered)** model is one of the most basic compartmental model for epidemiology. This is a dynamic simulation model and can be used to simulate the course/spread (over a time range) of an infectious disease, such as COVID-19. 
 <br>
 <br>
 As seen from the abbreviation of the model, it contains 3 different compartments: 
@@ -86,6 +86,11 @@ By estimating the parameters (alpha, beta and C), whether it is using local data
 
 **_Note: The true maximum or the number of confirmed cases is highly dependent on the amount of tests performed_**
 
+### Caveats of using such model for predictions
+
+The **Logistic Growth Curve model**, is a powerful model on predicting the number of cases accurately, but only for a short period of time. Furthermore, this model is highly dependent on the available data and has to be fed with new data continuously for an accurate model. Only with large data and continuously updating this model with new data, the predictions are accurate. However, the latter one is only accurate for prediction of short period of time *(such as the cases in the upcoming 2-5 days)*. 
+
+Lastly, depending on the purpose or what question has to be answered, different models should be used. These models are only as good as the data they rely on. Such **Logistic Growth Curve** can be used to accurately predict the cases of the coming days (when sufficient data is available), but for a longer period of time, the SIR/SEIR (compartmental models) should be used.
 
 ### Cumulative (confirmed) cases 
 After estimating the parameters and fitting the model, it is possible to get an idea of the predicted maximum number of cases in the Netherlands. These models can also be used to simulate and check whether a lockdown had any effect, by fitting a model with data before the strict measurements and a model with data during these strict measurements. A difference in the **predicted maximum** can be a sign that the measurements are effective. 
