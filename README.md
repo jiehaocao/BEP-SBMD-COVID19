@@ -69,6 +69,10 @@ _**Note: This curve is not the actual curve that simulates the spread of COVID-1
 
 This model can be interesting when simulating the spread of COVID-19 in a given country, because with the correctly estimated parameters, it is possible to get an estimation of the amount of people who are **Infected** or **Exposed** to COVID-19. Therefore, even with a lack of testing, it is possible to get an idea of how many people are exposed or infected. Furthermore, which such models, it is possible to see whether if the taken measurements will "flatten the curve".
 
+### Adjustment and modification of the compartment models
+
+These compartment models can have a high complexity. More compartments, such as **quarantine population** or **hospital admissions** can also be added. The models' predictions or simulations would not be dependent on the available data, but the available data is necessary to determine the different parameters in the differential equations found in these models, so the  predictions and simulations' accuracy can be improved.
+
 ## 2. Logistic Growth (3 parameters - Verhulst)
 
 The **Logistic Growth curve** can be used to estimate the inflection point and/or predict the maximum number of cases of COVID-19. This can also be applied on the **Hospital admissions** and **ICU admissions**. 
