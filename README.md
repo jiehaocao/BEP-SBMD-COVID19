@@ -71,7 +71,15 @@ This model can be interesting when simulating the spread of COVID-19 in a given 
 
 ### Adjustment and modification of the compartment models
 
-These compartment models can have a high complexity. More compartments, such as **quarantine population** or **hospital admissions** can also be added. The models' predictions or simulations would not be dependent on the available data, but the available data is necessary to determine the different parameters in the differential equations found in these models, so the  predictions and simulations' accuracy can be improved.
+As mentioned in the previous paragraph, these compartment models can have a high complexity. More compartments, such as **quarantine population** or **hospital admissions** can also be added. The models' predictions or simulations would not be dependent on the available data, but the available data is necessary to determine the different parameters in the differential equations found in these models, so the  predictions and simulations' accuracy can be improved.
+<br><br>
+
+An example of this modified compartment (*modifying the SEIR model*) model, to simulate the spread of COVID-19 in the Netherlands is given in the diagram below: 
+
+![](./images/extended_compartment_seir.PNG)
+
+_**S = Susceptibles, E = Exposed, I = Infected, D = Deceased, R = Recovered, Q = Quarantined, N = Nursing Home, H = Hospital, <br>IC = Intensive Care**_
+
 
 ## 2. Logistic Growth (3 parameters - Verhulst)
 
