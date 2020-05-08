@@ -25,7 +25,7 @@ The programming language used for this project is Python and the codes are execu
 The data that were used for this research are included in the folder _"data"_ and are obtained from the website of **RIVM (National Institute for Public Health and the Environment)**.
 The data redarding the ICU  admission is obtained from **Stichting Nice (National Intensive Care Evaluatie): https://www.stichting-nice.nl/**
 
-## 1. SIR and SEIR model 
+## 1. SIR/SEIR model 
 
 Both **SIR** and **SEIR** are compartmental models, which consist of differential equations, which simulates the input/output at each compartment. Which the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
 <br><br>
