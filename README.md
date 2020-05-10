@@ -3,16 +3,25 @@
 This repository (*in the folder "notebook"*) contains the codes and logs for my **"Bachelor Eind Project" (BEP)** regarding the topic and research of COVID-19. This work will focus on the *data of COVID-19 in the Netherlands.* 
 
 
-<br>
+## Introduction 
+
+**COVID-19 (Coronavirus disease 2019)** is an ongoing world crisis, declared as a pandemic by the WHO (*World Health Organization*), caused by the virus **SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2)**.
+<br><br>
+The spread of COVID-19 is a serious threat to the global health. In the past month, many scientists have used their knowledge and skills (regarding infectious disease modelling, epidemics and statistics) to create models and simulations for the spread of COVID-19. 
+
+While it might be easy to gather data and fitting a model, an **_in silico experiment_** is often different from reality. Hence, there are many different approaches and models to simulate the spread of COVID-19. Furthermore, depending on the purpose or what question has to be answered, different models should be used. These models are only as good as the data they rely on, thus not one model is perfect or the "go-to answer" to this pandemic. Nevertheless, by using existing data and fitting a model  the severity and the spread of this disease can be simulated. 
+The latter information is important, because with this, the government, healthcare companies or hospitals can take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU (*Intensive Care Unit*) are not overloaded).
 
 
 This BEP will focus on different models for the modelling and prediction of the spread
-of COVID-19 in the Netherlands. Many existing epidemic models are based on the SIR
+of **COVID-19 in the Netherlands**. Many existing epidemic models are based on the SIR
 or SEIR models. Popular model for the prediction of daily cases, is to use a 3 parameters logistic
 growth curve, developed by Pierre François Verhulst. However, it is also possible to use
 a more dynamic model, such as the Kalman filter. Since the spread of COVID-19 in
 the Netherlands can be seen as a system that is continuously changing and as a real-time
-problem, using a Kalman filter might be an ideal approach.
+problem, using a Kalman filter might be an ideal approach for estimations.
+
+For the different types of models, there are many advantages but also caveats. Thus, knowing in which situation and when one model should be used instead of the other models is important to tackle the spread of COVID-19. 
 
 
 
