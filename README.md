@@ -110,7 +110,7 @@ After estimating the parameters and fitting the model, it is possible to get an 
 The logistic growth curve and its statistics, using the data from the Netherlands, is shown below:
 
 
-![](/images/log_growth_dailycases_090520.PNG)
+![](/images/log_growth_dailycases_100520.PNG)
 
 
 However, this model highly depends on the available data. Model can be tweaked by using estimated parameters obtained from data from other countries. Furthermore, it might be more interesting **the model the hospital admissions and ICU (Intensive Care Unit) admissions**. 
@@ -144,7 +144,7 @@ A downward deviation, would mean that things are getting better, but a upward de
 
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
-![](/images/exp_trajectory_090520.PNG)
+![](/images/exp_trajectory_100520.PNG)
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
 
