@@ -109,7 +109,7 @@ The parameters of this logistic growth curve are estimated by using **Nonlinear 
 The equations of this logistic growth curve is given below: 
 
 <p align="center">
-  <img src="./images/logistic_growth_equation.PNG">
+  <img src="./images/logistic_growth_equation-v2.PNG">
 </p>
 
 By estimating the parameters (alpha, beta and C), whether it is using local data (the Netherlands) or from another country, it is possible to predict the **maxmimum number of cases**, thus it gives an idea when the "peak" is achieved (in how many days after the first confirmed case).
