@@ -54,7 +54,10 @@ As seen from the abbreviation of the model, it contains 3 different compartments
 Below an example of such simulation is given (in a graph):
 <br>
 
-![](/images/sir_simulation.png)
+
+<p align="center">
+  <img src="./images/sir_simulation.png">
+</p>
 
 _**Note: This curve is not the actual curve that simulates the spread of COVID-19 in the Netherlands. The parameters were freely chosen for generating the plot**_
 
@@ -86,7 +89,7 @@ As mentioned in the previous paragraph, these compartment models can have a high
 An example of this modified compartment (*modifying the SEIR model*) model, to simulate the spread of COVID-19 in the Netherlands is given in the diagram below: 
 
 <p align="center">
-  <img width="600" height="600" src="./images/extended_compartment_seir.PNG">
+  <img width="600" height="400" src="./images/extended_compartment_seir.PNG">
 </p>
 
 _**S = Susceptibles, E = Exposed, I = Infected, D = Deceased, R = Recovered, Q = Quarantined, N = Nursing Home, H = Hospital, <br>IC = Intensive Care**_
