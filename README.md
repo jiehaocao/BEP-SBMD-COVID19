@@ -74,7 +74,9 @@ The **SEIR (Susceptible-Exposed-Infected-Recovered)** model, does not include th
 
 Below an example of such simulation is given (in a graph):
 
-![](/images/seird_simulation.png)
+<p align="center">
+  <img src="./images/seird_simulation.png">
+</p>
 
 _**Note: This curve is not the actual curve that simulates the spread of COVID-19 in the Netherlands. The parameters were freely chosen for generating the plot**_
 
@@ -106,7 +108,9 @@ The parameters of this logistic growth curve are estimated by using **Nonlinear 
 
 The equations of this logistic growth curve is given below: 
 
-![](/images/logistic_growth_equation.PNG)
+<p align="center">
+  <img src="./images/logistic_growth_equation.PNG">
+</p>
 
 By estimating the parameters (alpha, beta and C), whether it is using local data (the Netherlands) or from another country, it is possible to predict the **maxmimum number of cases**, thus it gives an idea when the "peak" is achieved (in how many days after the first confirmed case).
 
@@ -124,7 +128,10 @@ After estimating the parameters and fitting the model, it is possible to get an 
 The logistic growth curve and its statistics, using the data from the Netherlands, is shown below:
 
 
-![](/images/log_growth_dailycases_110520.PNG)
+
+<p align="center">
+  <img src="./images/log_growth_dailycases_110520.PNG">
+</p>
 
 
 However, this model highly depends on the available data. Model can be tweaked by using estimated parameters obtained from data from other countries. Furthermore, it might be more interesting **the model the hospital admissions and ICU (Intensive Care Unit) admissions**. 
@@ -138,14 +145,17 @@ Thus, the section of **Hospital Admission** and **ICU Admissions** under Logisti
 
 The logistic growth curve and its statistics for hospital admissions in the Netherlands: 
 
-![](/images/log_growth_hosp.PNG)
-
+<p align="center">
+  <img src="./images/log_growth_hosp.PNG">
+</p>
 
 ### ~~ICU Admissions~~ (DEPRECATED) 
 
 The logistic growth curve and its statistics for the ICU admissions in the Netherlands: 
 
-![](/images/log_growth_icu.PNG)
+<p align="center">
+  <img src="./images/log_growth_icu.PNG">
+</p>
 
 **Note: The actual data passes the predicted maximum, but these models are still valid, meaning that there exist a chance that the actual admissions can pass the predicted maximum. Therefore, it is important use these models to achieve insights when taking preventive measurements.**
 
@@ -158,7 +168,9 @@ A downward deviation, would mean that things are getting better, but a upward de
 
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
-![](/images/exp_trajectory_110520.PNG)
+<p align="center">
+  <img src="./images/exp_trajectory_110520.PNG">
+</p>
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
 
