@@ -130,7 +130,7 @@ The logistic growth curve and its statistics, using the data from the Netherland
 
 
 <p align="center">
-  <img src="./images/log_growth_dailycases_110520.PNG">
+  <img src="./images/log_growth_dailycases_110520-v2.PNG">
 </p>
 
 
