@@ -145,26 +145,11 @@ However, this model highly depends on the available data. Model can be tweaked b
 
 This is important, because it can be predicted what the **maximum intake** is and when is "peak" is achieved. With this information, it is possible to take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU are not overloaded).
 
-### ~~Hospital Admissions~~ (DEPRECATED) 
+
 
 **IMPORTANT**: Logistic growth is not 'suitable' for hospital & ICU admissions, because the logistic growth curve is only taking the admissions into account, but not the discharge of the patients (recovered or deceased). 
 Thus, the section of **Hospital Admission** and **ICU Admissions** under Logistic Growth are **_deprecated (on Github)_** To view the deprecated work please go to [Deprecated results regarding logistic growth curve for Hospital and ICU admissions](DEPRECATED.md)
 
-~~The logistic growth curve and its statistics for hospital admissions in the Netherlands:~~ 
-
-<p align="center">
-  <img src="./images/log_growth_hosp.PNG">
-</p>
-
-### ~~ICU Admissions~~ (DEPRECATED) 
-
-~~The logistic growth curve and its statistics for the ICU admissions in the Netherlands:~~ 
-
-<p align="center">
-  <img src="./images/log_growth_icu.PNG">
-</p>
-
-~~**Note: The actual data passes the predicted maximum, but these models are still valid, meaning that there exist a chance that the actual admissions can pass the predicted maximum. Therefore, it is important use these models to achieve insights when taking preventive measurements.**~~
 
 
 ### Exponential growth (3 parameters)
