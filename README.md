@@ -6,7 +6,7 @@ This repository (*in the folder "notebook"*) contains the codes and logs for my 
 ## Introduction 
 
 **COVID-19 (Coronavirus disease 2019)** is an ongoing world crisis, declared as a pandemic by the WHO (*World Health Organization*), caused by the virus **SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2)**.
-<br><br>
+
 The spread of COVID-19 is a serious threat to the global health. In the past month, many scientists have used their knowledge and skills (regarding infectious disease modelling, epidemics and statistics) to create models and simulations for the spread of COVID-19. 
 
 While it might be easy to gather data and fitting a model, an **_in silico experiment_** is often different from reality. Hence, there are many different approaches and models to simulate the spread of COVID-19. Furthermore, depending on the purpose or what question has to be answered, different models should be used. These models are only as good as the data they rely on, thus not one model is perfect or the "go-to answer" to this pandemic. Nevertheless, by using existing data and fitting a model, the severity and the spread of this disease can be simulated. 
@@ -171,6 +171,56 @@ The trajectory and its statistics, regarding the confirmed COVID-19 cases in the
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
 
-The **Kalman filter** is a mathematical model that can be used as an estimator or filter. This means that this Kalman Filter can also be applied on the SEIR models or the Logistic Growth Curve, as a filter. But in this section, Kalman Filter is used as an estimator, to forecast the spread of COVID-19 in the Netherlands. Since, the Kalman Filter is ideal for systems that are continuously changing, the spread of COVID-19, which is time-dependent can also be seen as a continuously changing system. 
+The **Kalman filter** is a mathematical model that can be used as a predictor or filter. This means that this Kalman Filter can also be applied on the SEIR models or the Logistic Growth Curve, as a filter. But in this section, Kalman Filter is used as a predictor, to forecast the spread of COVID-19 in the Netherlands. Since, the Kalman Filter is ideal for systems that are continuously changing, the spread of COVID-9, which is time-dependent can also be seen as a continously changing system. 
 <br><br>
-The advantage is that Kalman Filter uses the observed measurements, which are measured over time (*confirmed daily cases*), to update the *a priori state* of the system. These measurements can contain noise and inaccuracies (*for example in this case: lack of testing, social distancing etc.*), which the Kalman Filter will take into account and therefore produce numbers that are closer to the actual data (*the prediction would be closer to the actual confirmed cases of that day or upcoming days*).
+The advantage is that Kalman Filter uses the observed measurements, which are measured over time (*confirmed daily cases*). These measurements can contain noise and inaccuracies (*for example in this case: lack of testing, social distancing etc.*), which the Kalman Filter will take into account and therefore produce values that are closer to the actual data (*the prediction would be closer to the actual confirmed cases of that day*).
+<br><br>
+There are two sections regarding the Kalman Filter which are (also mentioned in the notebook/codes):
+1. `Section (1)`: A self-defined **exponential growth system with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
+2. `Section (2)`:The **SIR/SEIR** model, to take uncertainties into account and use this as a filter on the dynamic systems of SIR/SEIR models.
+
+### Kalman filter on `section (1)`
+
+<br>
+
+The `section (1)` will be used for comparison of the results and the comparisons are:
+1. **Kalman Filter** VS **Logistic Growth** on *short-term predictions*
+2. **Kalman Filter** VS **Logistic Growth** on *long-term predictions*
+3. **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logisitcs Growth predictions** (*short-term predictions*)
+
+<br>
+
+Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *short-term predictions* is shown below (in table):
+
+<p align="center">
+  <img src="./images/kf_vs_log_short_term.PNG">
+</p>
+
+<br>
+
+It is clear that the **Logistic Growth** predictions are on the lower side, which means it is underestimating the severity of the spread of COVID-19. This highly depends on the estimated parameters and its uncertainties, together with its upper and lower limit. Furthermore, the model depends on the new available data, while the **Kalman filter** does not necessarily needs to new available data. However, it is favorable to update the filtering process with new available data. 
+
+<br>
+<br>
+
+Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *long-term predictions* is shown below (in table):
+
+<p align="center">
+  <img src="./images/kf_vs_log_long_term.PNG">
+</p>
+
+
+Once again, it can be seen that for long-term predictions, the **Logistic Growth's** performance is quite poor, compared to the **Kalman Filter**. The main reason is because the Logistic Growth is not being fed with new available data, thus can lead to high uncertainties, while the Kalman Filter takes these uncertainties into account when making a prediction. 
+
+<br>
+<br>
+
+Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logisitcs Growth predictions** (*short-term predictions*) is shown below (in table):
+
+<p align="center">
+  <img src="./images/comparison_predictions.PNG">
+</p>
+
+<br>
+
+These are the predictions by the **Kalman Filter** and **Logistic Growth**, compared to the _**Confirmed cases**_. It can be seen that the Kalman filter is doing quite well, while underestimation is playing a role at the Logistic Growth. 
