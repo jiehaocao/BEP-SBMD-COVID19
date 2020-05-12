@@ -137,7 +137,7 @@ The logistic growth curve and its statistics, using the data from **the Netherla
 
 
 <p align="center">
-  <img src="./images/log_growth_dailycases_110520-v2.PNG">
+  <img src="./images/log_growth_dailycases_120520.PNG">
 </p>
 
 
@@ -161,7 +161,7 @@ A downward deviation, would mean that things are getting better, but a upward de
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
 <p align="center">
-  <img src="./images/exp_trajectory_110520.PNG">
+  <img src="./images/exp_trajectory_120520.PNG">
 </p>
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
