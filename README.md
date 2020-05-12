@@ -40,6 +40,10 @@ Both **SIR** and **SEIR** are compartmental models, which consist of differentia
 <br><br>
 The main advantage is that these models are independent from the actual data, thus even without proper or insufficient testing, _**the amount of people who are infected or exposed to this infectious disease, can be estimated**_. This is important, because with this information, the government, healthcare companies or hospitals can take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU are not overloaded).
 
+<br>
+
+[Click here to view the notebook/codes regarding the SIR/SEIR models](./notebook/SIR_and_SEIR-models.ipynb)
+
 **After all, the true number of infected person can only be verified with large testing of the population**. 
 ### SIR model 
 
@@ -104,6 +108,10 @@ _**S = Susceptibles, E = Exposed, I = Infected, D = Deceased, R = Recovered, Q =
 
 The **Logistic Growth curve** can be used to estimate the inflection point and/or predict the maximum number of cases of COVID-19. 
 When the parameters from this logistic growth model are estimated, such model can also be used to check whether the imposed measurements had any effect on the spread of COVID-19. 
+
+<br>
+
+[Click here to view the notebook/codes regarding the Logistic Growth model](./notebook/logistic_growth_verhulst.ipynb)
 
 ### Approach and advantages 
 This approach uses data analytics and statistics for the best fit of the curve/model. Furthermore, the actual/recorded data is used to generate this logistic growth curve. The advantage is, that it uses real data to generate and fit a model. By using real data and fitting a model, data from other countries such as China (large data available) can be used to estimate the proper parameters for the logistic growth curve. This can later be used for the prediction of the number of cases of COVID-19 in the Netherlands. 
