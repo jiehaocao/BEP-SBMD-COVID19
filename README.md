@@ -179,6 +179,8 @@ There are two sections regarding the Kalman Filter which are (also mentioned in 
 1. `Section (1)`: A self-defined **exponential growth system with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
 2. `Section (2)`:The **SIR/SEIR** model, to take uncertainties into account and use this as a filter on the dynamic systems of SIR/SEIR models.
 
+[Click here to view the notebook/codes regarding the Kalman Filter predictions](./notebook/Kalman_Filter_estimation.ipynb)
+
 ### Kalman filter on `section (1)`
 
 <br>
