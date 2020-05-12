@@ -208,7 +208,7 @@ It is clear that the **Logistic Growth** predictions are on the lower side, whic
 Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *long-term predictions* is shown below (in table):
 
 <p align="center">
-  <img src="./images/kf_vs_log_long_term.PNG">
+  <img src="./images/kf_vs_log_long_term-v2.PNG">
 </p>
 
 
