@@ -195,7 +195,7 @@ The `section (1)` will be used for comparison of the results and the comparisons
 Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *short-term predictions* is shown below (in table):
 
 <p align="center">
-  <img src="./images/kf_vs_log_short_term.PNG">
+  <img src="./images/kf_vs_log_short_term-v2.PNG">
 </p>
 
 <br>
@@ -220,7 +220,7 @@ Once again, it can be seen that for long-term predictions, the **Logistic Growth
 Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*) is shown below (in table):
 
 <p align="center">
-  <img src="./images/comparison_predictions.PNG">
+  <img src="./images/comparison_predictions-v2.PNG">
 </p>
 
 <br>
