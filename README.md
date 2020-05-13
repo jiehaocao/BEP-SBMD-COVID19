@@ -235,5 +235,5 @@ The main reason is because new available data (daily confirmed cases) is being f
 
 <br>
 
-_**Once again, it can be seen that the `Logistic Growth Model` is not performing well. The main reason is because the model contains a parameter `C`, which is the maximum capacity that should be time-dependent but unfortunately it is remains as a constant. 
-Therefore, underestimation can be seen and this will eventually affect the model's performance. A proposed solution is to make all 3 parameters, found in the Logistic Growth Model, time-dependent**_
+_**Once again, it can be seen that the `Logistic Growth Model` is not performing well. The main reason is because the model contains a parameter `C`, which is the maximum capacity that should be time-dependent but unfortunately it remains as a constant. 
+Therefore, underestimation can be seen and this will eventually affect the model's performance. A proposed solution is to make all 3 parameters, found in the Logistic Growth Model, time-dependent**_.
