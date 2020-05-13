@@ -229,7 +229,7 @@ Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predict
 <br>
 
 The above table shows the predictions by the **Kalman Filter** and **Logistic Growth**, compared to the _**Confirmed cases**_. It can be seen that the Kalman filter is doing quite well, while underestimation is playing a role at the Logistic Growth. 
-It is important to note that the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, which is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
+It is important to note that the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
 The main reason is because new available data (daily confirmed cases) is being fed to the model, where the model retrains itself (also taking uncertainties into account) and produces a new prediction. This is also the case for the
 `Logistic Growth Model`. Furthermore, the latter explanation is the main reason why sometimes **long-term predictions** are less accurate than **short-term predictions** (*when there are new data available*). 
 
