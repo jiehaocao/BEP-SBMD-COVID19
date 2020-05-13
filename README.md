@@ -1,7 +1,10 @@
 # BEP-SBMD-COVID19
 
-This repository (*in the folder "notebook"*) contains the codes and logs for my **"Bachelor Eind Project" (BEP)** regarding the topic and research of COVID-19. This work will focus on the *data of COVID-19 in the Netherlands.* 
+This repository (*in the folder "notebook"*) contains the codes and logs for my **"Bachelor Eind Project" (BEP) at Eindhoven University of Technology, Department of Biomedical Engineering** regarding the topic and research of COVID-19. This work will focus on the *data of COVID-19 in the Netherlands.* 
 
+The supervisors for my BEP are: 
+1. *prof. dr. ir. N.A.W. van Riel*
+2. *dr. D. Bosnacki* 
 
 ## Introduction 
 
@@ -142,7 +145,7 @@ The logistic growth curve and its statistics, using the data from **the Netherla
 
 
 <p align="center">
-  <img src="./images/log_growth_dailycases_120520.PNG">
+  <img src="./images/log_growth_dailycases_130520.PNG">
 </p>
 
 
@@ -166,7 +169,7 @@ A downward deviation, would mean that things are getting better, but a upward de
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
 <p align="center">
-  <img src="./images/exp_trajectory_120520.PNG">
+  <img src="./images/exp_trajectory_130520.PNG">
 </p>
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
