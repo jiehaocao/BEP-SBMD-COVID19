@@ -195,7 +195,7 @@ The `section (1)` will be used for comparison of the results and the comparisons
 
 <br>
 
-Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *short-term predictions* is shown below (in table):
+Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *short-term predictions* (`simulation was performed on 11-05-2020`) is shown below (in table):
 
 <p align="center">
   <img src="./images/kf_vs_log_short_term-v2.PNG">
@@ -208,7 +208,7 @@ It is clear that the **Logistic Growth** predictions are on the lower side, whic
 <br>
 <br>
 
-Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *long-term predictions* is shown below (in table):
+Results for the comparison of **Kalman Filter** VS **Logistic Growth** on *long-term predictions* (`simulation was performed on 11-05-2020`) is shown below (in table):
 
 <p align="center">
   <img src="./images/kf_vs_log_long_term-v2.PNG">
@@ -220,12 +220,20 @@ Once again, it can be seen that for long-term predictions, the **Logistic Growth
 <br>
 <br>
 
-Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*) is shown below (in table):
+Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 13-05-2020`, is shown below (in tabel) :
 
 <p align="center">
-  <img src="./images/comparison_predictions-v2.PNG">
+  <img src="./images/comparison_predictions_140520.PNG">
 </p>
 
 <br>
 
 The above table shows the predictions by the **Kalman Filter** and **Logistic Growth**, compared to the _**Confirmed cases**_. It can be seen that the Kalman filter is doing quite well, while underestimation is playing a role at the Logistic Growth. 
+It is important to note that the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, which is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
+The main reason is because new available data (daily confirmed cases) is being fed to the model, where the model retrains itself (also taking uncertainties into account) and produces a new prediction. This is also the case for the
+`Logistic Growth Model`. Furthermore, the latter explanation is the main reason why sometimes **long-term predictions** are less accurate than **short-term predictions** (*when there are new data available*). 
+
+<br>
+
+_**Once again, it can be seen that the `Logistic Growth Model` is not performing well. The main reason is because the model contains a parameter `C`, which is the maximum capacity that should be time-dependent but unfortunately it is remains as a constant. 
+Therefore, underestimation can be seen and this will eventually affect the model's performance. A proposed solution is to make all 3 parameters, found in the Logistic Growth Model, time-dependent**_
