@@ -145,7 +145,7 @@ The logistic growth curve and its statistics, using the data from **the Netherla
 
 
 <p align="center">
-  <img src="./images/log_growth_dailycases_130520.PNG">
+  <img src="./images/log_growth_dailycases_140520.PNG">
 </p>
 
 
@@ -169,7 +169,7 @@ A downward deviation, would mean that things are getting better, but a upward de
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
 <p align="center">
-  <img src="./images/exp_trajectory_130520.PNG">
+  <img src="./images/exp_trajectory_140520.PNG">
 </p>
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
@@ -220,16 +220,16 @@ Once again, it can be seen that for long-term predictions, the **Logistic Growth
 <br>
 <br>
 
-Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 13-05-2020`, is shown below (in table) :
+Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 13-05-2020 & 14-05-2020 for prediction and update, respectively`, is shown below (in table) :
 
 <p align="center">
-  <img src="./images/comparison_predictions_140520.PNG">
+  <img src="./images/comparison_predictions_150520.PNG">
 </p>
 
 <br>
 
 The above table shows the predictions by the **Kalman Filter** and **Logistic Growth**, compared to the _**Confirmed cases**_. It can be seen that the Kalman filter is doing quite well, while underestimation is playing a role at the Logistic Growth. 
-It is important to note that the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
+It is important to note that, **for example**, the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
 The main reason is because new available data (daily confirmed cases) is being fed to the model, where the model retrains itself (also taking uncertainties into account) and produces a new prediction. This is also the case for the
 `Logistic Growth Model`. Furthermore, the latter explanation is the main reason why sometimes **long-term predictions** are less accurate than **short-term predictions** (*when there are new data available*). 
 
