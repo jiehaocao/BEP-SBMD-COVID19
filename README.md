@@ -145,7 +145,7 @@ The logistic growth curve and its statistics, using the data from **the Netherla
 
 
 <p align="center">
-  <img src="./images/log_growth_dailycases_150520.PNG">
+  <img src="./images/log_growth_dailycases_160520.PNG">
 </p>
 
 
@@ -169,7 +169,7 @@ A downward deviation, would mean that things are getting better, but a upward de
 The trajectory and its statistics, regarding the confirmed COVID-19 cases in the Netherlands: 
 
 <p align="center">
-  <img src="./images/exp_trajectory_150520.PNG">
+  <img src="./images/exp_trajectory_160520.PNG">
 </p>
 
 ## 3. Kalman Filter (UNDER DEVELOPMENT)
@@ -220,10 +220,10 @@ Once again, it can be seen that for long-term predictions, the **Logistic Growth
 <br>
 <br>
 
-Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 14-05-2020 & 15-05-2020 for prediction and update, respectively`, is shown below (in table) :
+Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 15-05-2020 & 16-05-2020 for prediction and update, respectively`, is shown below (in table) :
 
 <p align="center">
-  <img src="./images/comparison_predictions_160520.PNG">
+  <img src="./images/comparison_predictions_170520.PNG">
 </p>
 
 <br>
