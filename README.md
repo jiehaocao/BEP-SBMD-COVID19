@@ -232,6 +232,7 @@ The above table shows the predictions by the **Kalman Filter** and **Logistic Gr
 It is important to note that, **for example**, the `Kalman Filter Prediction for 14-05-2020 = 43480.0`, is different than the `Kalman Filter Prediction for 14-05-2020 = 43499.0` found in the previous table that shows the results of the **long-term predictions**. 
 The main reason is because new available data (daily confirmed cases) is being fed to the model, where the model retrains itself (also taking uncertainties into account) and produces a new prediction. This is also the case for the
 `Logistic Growth Model`. Furthermore, the latter explanation is the main reason why sometimes **long-term predictions** are less accurate than **short-term predictions** (*when there are new data available*). 
+However, the predictions might have a larger deviation when the amount of tests performed each day is increased or decreased drastically. This also applies for the Kalman Filter model, but the Kalman Filter will take such deviation and uncertainty into account and update itself for a better prediction of the upcoming day(s).  
 
 <br>
 
