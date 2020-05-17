@@ -39,7 +39,7 @@ The data redarding the ICU  admission is obtained from **Stichting Nice (Nationa
 
 ## 1. SIR/SEIR model 
 
-Both **SIR** and **SEIR** are compartmental models, which consist of differential equations, which simulates the input/output at each compartment. With the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
+Both **SIR** and **SEIR** are compartmental models in epidemiology, which consist of differential equations, which simulates the input/output at each compartment. With the correct estimation of the parameters in these equations, it is possible to simulate the course/spread of COVID-19. 
 
 [Click here to view the notebook/codes regarding the SIR/SEIR models](./notebook/SIR_and_SEIR-models.ipynb)
 
