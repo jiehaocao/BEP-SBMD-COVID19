@@ -220,10 +220,10 @@ Once again, it can be seen that for long-term predictions, the **Logistic Growth
 <br>
 <br>
 
-Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 16-05-2020 & 17-05-2020 for prediction and update, respectively`, is shown below (in table) :
+Results for the comparison of **The Confirmed Cases** VS **Kalman Filter predictions** VS **Logistic Growth predictions** (*short-term predictions*), after running a `simulation on 17-05-2020 & 18-05-2020 for prediction and update, respectively`, is shown below (in table) :
 
 <p align="center">
-  <img src="./images/comparison_predictions_180520.PNG">
+  <img src="./images/comparison_predictions_190520.PNG">
 </p>
 
 <br>
