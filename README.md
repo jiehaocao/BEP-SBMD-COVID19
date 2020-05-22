@@ -43,6 +43,10 @@ Both **SIR** and **SEIR** are compartmental models in epidemiology, which consis
 
 [Click here to view the notebook/codes regarding the SIR/SEIR models](./notebook/SIR_and_SEIR-models.ipynb)
 
+For the estimation of the parameters in the SEIRD model (using the COVID-19 data of the Netherlands):
+
+[Click here for the parameter estimation of the SEIRD model, using the data of COVID-19 in the Netherlands](./notebook/estimating_sir-params.ipynb)
+
 <br><br>
 The main advantage is that these models are independent from the actual data, thus even without proper or insufficient testing, _**the amount of people who are infected or exposed to this infectious disease, can be estimated**_. This is important, because with this information, the government, healthcare companies or hospitals can take preventive measurements (such as necessary lockdowns, making sure that there are enough medical supplies and/or that the hospitals and ICU are not overloaded).
 
