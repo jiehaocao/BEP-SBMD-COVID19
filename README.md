@@ -185,7 +185,7 @@ The **Kalman filter** is a mathematical model that can be used to estimate the p
 The advantage is that Kalman Filter uses the observed measurements, which are measured over time (*confirmed daily cases*). These measurements can contain noise and inaccuracies (*for example in this case: lack of testing, social distancing etc.*), which the Kalman Filter will take into account and therefore produce values that are closer to the actual data (*the prediction would be closer to the actual confirmed cases of that day*).
 <br><br>
 There are two sections regarding the Kalman Filter which are (also mentioned in the notebook/codes):
-1. `Section (1)`: A self-defined **exponential growth system with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
+1. `Section (1)`: A simple **exponential growth system with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
 2. `Section (2)`:The **SIR/SEIR** model, to take uncertainties into account and use this as a filter on the dynamic systems of SIR/SEIR models.
 
 [Click here to view the notebook/codes regarding the Kalman Filter predictions](./notebook/Kalman_Filter_estimation.ipynb)
