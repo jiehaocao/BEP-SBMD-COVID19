@@ -178,15 +178,15 @@ The trajectory and its statistics, regarding the confirmed COVID-19 cases in the
   <img src="./images/exp_trajectory_240520.PNG">
 </p>
 
-## 3. Kalman Filter (UNDER DEVELOPMENT)
+## 3. Kalman Filter
 
 The **Kalman filter** is a mathematical model that can be used to estimate the past, present or future states. This means that this Kalman Filter can also be applied on the SEIR models or the Logistic Growth Curve, as a filter. But in this section the Kalman Filter is used for the estimations of future states, to forecast the spread of COVID-19 in the Netherlands. Since, the Kalman Filter is ideal for systems that are continuously changing, the spread of COVID-19, which is time-dependent can also be seen as a continuously changing system. 
 <br><br>
 The advantage is that Kalman Filter uses the observed measurements, which are measured over time (*confirmed daily cases*). These measurements can contain noise and inaccuracies (*for example in this case: lack of testing, social distancing etc.*), which the Kalman Filter will take into account and therefore produce values that are closer to the actual data (*the prediction would be closer to the actual confirmed cases of that day*).
 <br><br>
 There are two sections regarding the Kalman Filter which are (also mentioned in the notebook/codes):
-1. `Section (1)`: A simple **exponential growth system with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
-2. `Section (2)`:The **SIR/SEIR** model, to take uncertainties into account and use this as a filter on the dynamic systems of SIR/SEIR models.
+1. `Section (1)`: A simple **self-made model with randomization on the growth parameter** (based on the available data - *daily confirmed cases*)
+2. `Section (2)`:The **SIR/SEIRD** model, to take uncertainties into account and use this as a filter on the dynamic systems of SIR/SEIR models.
 
 [Click here to view the notebook/codes regarding the Kalman Filter predictions](./notebook/Kalman_Filter_estimation.ipynb)
 
@@ -244,3 +244,36 @@ However, the predictions might have a larger deviation when the amount of tests 
 
 _**Once again, it can be seen that the `Logistic Growth Model` is not performing well. The main reason is because the model contains a parameter `C`, which is the maximum capacity that should be time-dependent but unfortunately it remains as a constant. 
 Therefore, underestimation can be seen and this will eventually affect the model's performance. A proposed solution is to make all 3 parameters, found in the Logistic Growth Model, time-dependent**_.
+
+
+### Kalman filter on `section (2)`
+
+<br>
+
+This section will show the simulation output when the Kalman filter is applied to the:
+1. **SIR model**: simulation output regarding the _Infected compartment_
+2. **SEIRD model**: simulation output regarding the _Deceased compartment_
+
+#### Kalman filter applied to the SIR model 
+
+The simulation output, regarding the _Infected compartment_, is given in the graph below. The observed measurements or the actual data is represented by the black dots, the simulaton without Kalman filter is the blue line and the Kalman filtered simulation is the orange dashed line.
+
+<p align="center">
+  <img src="./images/KF-sir-infected.png">
+</p>
+
+<br>
+[Click here to view the notebook/codes regarding the Kalman filtered SIR model](./notebook/estimating_sir-params.ipynb)
+
+
+#### Kalman filter applied to the SEIRD model 
+
+The simulation output, regarding the _Deceased compartment_, is given in the graph below. The observed measurements or the actual data is represented by the black dots, the simulaton without Kalman filter is the blue line and the Kalman filtered simulation is the orange dashed line.
+
+<p align="center">
+  <img src="./images/KF_seird_D_v2.png">
+</p>
+
+<br>
+[Click here to view the notebook/codes regarding the Kalman filtered SIR model](./notebook/KF_seird.py)
+
