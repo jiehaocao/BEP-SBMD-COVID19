@@ -267,6 +267,7 @@ The simulation output, regarding the _Infected compartment_, is given in the gra
 **It is important to note** that after May 25, 2020 the Kalman filter uses the _a priori_ estimations of the future state as the _observed measurements_ for the Kalman update step. 
 
 <br>
+
 [Click here to view the notebook/codes regarding the Kalman filtered SIR model](./notebook/estimating_sir-params.ipynb)
 
 
@@ -276,7 +277,7 @@ The simulation output, regarding the _Infected compartment_, is given in the gra
 The simulation output, regarding the _Deceased compartment_, is given in the graph below. The observed measurements or the actual data is represented by the black dots, the simulaton without Kalman filter is the blue line and the Kalman filtered simulation is the orange dashed line.
 
 <p align="center">
-  <img src="./images/KF_seird_D_v2.png" width="720" height="720">
+  <img src="./images/KF_seird_D_v2.png" width="680" height="680">
 </p>
 
 <br>
