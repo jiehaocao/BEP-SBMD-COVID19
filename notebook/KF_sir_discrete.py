@@ -31,7 +31,7 @@ R0_values = estimated_sol_sir[4]
 
 
 # Time-dependent beta assumed to be known, thus not estimated with the Kalman filter
-beta = [i * gamma + (np.random.randint(2) / 100) for i in R0_values[shift:]]
+beta = [i * gamma for i in R0_values[shift:]]
 
 # The error covariance matrix
 P = np.array([[0.01, 0, 0],
