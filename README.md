@@ -268,9 +268,15 @@ The simulation output, regarding the _Infected compartment_, is given in the gra
 
 <br>
 
-[Click here to view the notebook/codes regarding the Kalman filtered SIR model](./notebook/estimating_sir-params.ipynb)
+[Click here to view the notebook/codes regarding the extended Kalman filtered SIR model](./notebook/estimating_sir-params.ipynb)
 
+<br>
 
+If the standard Kalman filter is used and applied to the discrete-time SIR model:
+
+<br>
+
+[Click here to view the notebook/codes regarding the standard Kalman filtered SIR model](./notebook/KF_sir_discrete.py)
 
 #### Kalman filter applied to the SEIRD model 
 
@@ -286,5 +292,12 @@ The simulation output, regarding the _Deceased compartment_, is given in the gra
 
 <br>
 
-[Click here to view the notebook/codes regarding the Kalman filtered SEIRD model](./notebook/KF_seird.py)
+[Click here to view the notebook/codes regarding the extended Kalman filtered SEIRD model](./notebook/KF_seird.py)
 
+<br>
+
+If the standard Kalman filter is used and applied to the discrete-time SEIRD model:
+
+<br>
+
+[Click here to view the notebook/codes regarding the standard Kalman filtered SEIRD model](./notebook/KF_seird_discrete.py)
